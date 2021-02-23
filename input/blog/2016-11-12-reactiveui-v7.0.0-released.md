@@ -30,8 +30,8 @@ Instead of doing the typical ViewModel isLoading = true/false mutable dance by t
 
 **Still not convinced?**
 - [Why You Should Be Building Better Mobile Apps with Reactive Programming](https://www.youtube.com/watch?v=DYEbUF4xs1Q) – Michael Stonis (Xamarin Univeristy Trainer/Eightbot)
-- [Awaiting for Rx: A Play in Four Acts](https://www.youtube.com/watch?v=5DZ8nC0ENdg) - Paul Betts (Slack/GitHub) 
-- [FRP In Practice: Taking a look at ReactiveUI/ReactiveCocoa](https://www.youtube.com/watch?v=1XNATGjqM6U) by Paul Betts (Slack/GitHub)
+- [Awaiting for Rx: A Play in Four Acts](https://www.youtube.com/watch?v=5DZ8nC0ENdg) - Anaïs Betts (Slack/GitHub) 
+- [FRP In Practice: Taking a look at ReactiveUI/ReactiveCocoa](https://www.youtube.com/watch?v=1XNATGjqM6U) by Anaïs Betts (Slack/GitHub)
 
 Maybe you need to watch this insanely smart, and eccentric guy in a tie-dye t-shirt do maths on a whiteboard:
 
@@ -110,7 +110,7 @@ For more details, please see the [extensive documentation](https://docs.reactive
 `UserError` has been generalized and re-imagined. We call it interactions, and we think you'll like it. We did this in part because people were feeling icky using `UserError` for non-error scenarios. Basically, we realized that people need a general mechanism via which a view model can ask a question, and wait for the answer. It doesn't have to be an error - we're not that pessimistic! You could be asking to confirm a file deletion, or maybe how the weather is out there in the analog world.
 
 Migrating from `UserError` to the interactions infrastructure is not really a case of one-for-one substitution. But here are some tips to get you started:
-- read through [the documentation](http://docs.reactiveui.net/en/user-guide/interactions/index.html) first.
+- read through [the documentation](https://docs.reactiveui.net/en/user-guide/interactions/index.html) first.
 - decide whether you need shared interactions and, if so, define them in an appropriate place for your application (often just a static class).
 - for any non-shared interactions, have your view model create an instance of the interaction and expose it via a property.
 - typically you want the corresponding view to handle interactions by calling one of the `RegisterHandler` methods on the interaction exposed by the view model.

@@ -1,10 +1,10 @@
 ---
 title: ReactiveUI v6.0.5 released
 category: Release Notes
-author: Paul Betts
+author: Anaïs Betts
 ---
 
-## [What's New](http://github.com/reactiveui/ReactiveUI/compare/6.0.4...6.0.5)
+## [What's New](https://github.com/reactiveui/ReactiveUI/compare/6.0.4...6.0.5)
 
 ### ToProperty and ReactiveCommand are no longer lazy in a test runner
 

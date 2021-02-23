@@ -1,18 +1,27 @@
 Order: 10
 ---
+# 2020
+
+## Going Reactive with Reactive Extensions and ReactiveUI
+
+Mobile developers have some unique constraints that we have to solve for.  We develop in a world where we respond to events, fire asynchronous tasks all on a device that may not have the resources available to complete these tasks.
+
+<?# YouTube VoPtj6n_wz0 /?>
 
 # 2018
 
 ## Lifting App State with Geoffrey Huntley | The Xamarin Show
 This week, James is joined by friend of the show and Microsoft MVP Geoffrey Huntley to discuss lifting app state with Reactive Extensions (RX). Geoffrey gives a full overview of RX and Reactive UI and how it can help developers compose their application logic easier. He walks through full concepts and how to convert some MVVM code over.
 
-<iframe src="https://www.youtube.com/embed/3HwEytvngXk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<?# YouTube 3HwEytvngXk /?>
+
 
 # 2017
 
 ## There is a better way
 There is a better way - Geoffrey Huntley at NDC Sydney
-<iframe class="embedded-video" src="https://www.youtube.com/embed/4inY7TFEVT0" frameborder="0" allowfullscreen></iframe>
+
+<?# YouTube 4inY7TFEVT0 /?>
 
 ## The Xamarin Show: Episode 17
 ReactiveUI with Michael Stonis
@@ -25,39 +34,43 @@ ReactiveUI with Michael Stonis
 
 Michael Stonis & Geoffrey Huntley at Xamarin University
 
-<iframe class="embedded-video" src="https://www.youtube.com/embed/vydDJ9CaIug?list=PLM9jdoijSdhgiRR9Bd8KkLggD0LZK5K3C" frameborder="0" allowfullscreen></iframe>
+<?# YouTube vydDJ9CaIug /?>
 
 ## Why You Should Be Building Better Mobile Apps with Reactive Programming 
 
 Michael Stonis at Xamarin Evolve 2016
-<iframe class="embedded-video" src="https://www.youtube.com/embed/DYEbUF4xs1Q" frameborder="0" allowfullscreen></iframe>
+
+<?# YouTube DYEbUF4xs1Q /?>
 
 ## Reactive Programming, changing the world at Netflix, Microsoft, Slack and beyond!
 
 Matthew Podwysocki at AngularConf
-<iframe class="embedded-video" src="https://www.youtube.com/embed/yEeDbHvg1vQ" frameborder="0" allowfullscreen></iframe>
+
+<?# YouTube yEeDbHvg1vQ /?>
 
 # 2015
 
 ## Reactive UI - It's pretty neat
 By Brendan Forster
 
-<iframe class="embedded-video" src="https://www.youtube.com/embed/HPyKHxy7X0w" frameborder="0" allowfullscreen></iframe>
+<?# YouTube HPyKHxy7X0w /?>
 
 # 2014
 
 ## Awaiting for Rx: A Play in Four Acts
 
-Paul Betts at Xamarin Evolve 2014
-<iframe class="embedded-video" src="https://www.youtube.com/embed/5DZ8nC0ENdg?list=PLM9jdoijSdhgiRR9Bd8KkLggD0LZK5K3C" frameborder="0" allowfullscreen></iframe>
+Anaïs Betts at Xamarin Evolve 2014
+
+<?# YouTube 5DZ8nC0ENdg /?>
 
 ## FRP In Practice: Taking a look at Reactive[UI/Cocoa]
 
-Paul Betts at Strange Loop
-<iframe class="embedded-video" src="https://www.youtube.com/embed/1XNATGjqM6U?list=PLM9jdoijSdhgiRR9Bd8KkLggD0LZK5K3C" frameborder="0" allowfullscreen></iframe>
+Anaïs Betts at Strange Loop
+
+<?# YouTube 1XNATGjqM6U /?>
 
 # 2012
 
-## Reactive Extensions and ReactiveUI: Paul Betts at QCon
+## Reactive Extensions and ReactiveUI: Anaïs Betts at QCon
 
 https://www.infoq.com/presentations/Reactive-Extensions-and-ReactiveUI

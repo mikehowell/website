@@ -13,7 +13,7 @@ Another important aspect of understanding ViewModels is that they are an abstrac
 
 ### ViewModels are Reusable
 
-Because ViewModels do not explicitly reference UI frameworks or controls, this means that ViewModels can often be *reused across platforms*. This is a very powerful pattern that can drastically reduce the time required to port to a new platform, especially in conjunction with portable libraries designed to help in this task, such as [Splat](https://github.com/paulcbetts/splat) and [Akavache](https://github.com/akavache/Akavache). The majority of your application's interesting code (models / network handling / caching / image loading / viewmodels) can be used on all platforms, and only the View-related classes need to be rewritten.
+Because ViewModels do not explicitly reference UI frameworks or controls, this means that ViewModels can often be *reused across platforms*. This is a very powerful pattern that can drastically reduce the time required to port to a new platform, especially in conjunction with portable libraries designed to help in this task, such as [Splat](https://github.com/reactiveui/splat) and [Akavache](https://github.com/reactiveui/Akavache). The majority of your application's interesting code (models / network handling / caching / image loading / viewmodels) can be used on all platforms, and only the View-related classes need to be rewritten.
 
 ### Common Mistakes and Misconceptions
 
@@ -80,6 +80,7 @@ Similar to read-write properties, this code should always be 100% boilerplate. N
 
 ```cs
 this.WhenAnyValue(x => x.Name)
+    .Where(x => !string.IsNullOrEmpty(x))
     .Select(x => x.Split(' ')[0])
     .ToProperty(this, x => x.FirstName, out firstName);
 ```
@@ -99,14 +100,4 @@ As a result, almost all of the interesting code in a well-written ReactiveUI Vie
 
 All of these statements are concise descriptions of parts of how your UI should work, and these statements can all be directly translated into Rx expressions in your ViewModel constructor.
 
-# Managing boilerplate code
-
-If you are tired of writing boilerplate code for property change notifications, you can try either <a href="https://github.com/Fody/PropertyChanged">PropertyChanged.Fody</a> or <a href="https://www.nuget.org/packages/ReactiveUI.Fody/">ReactiveUI.Fody</a>. These libraries are both based on <a href="https://github.com/Fody/">Fody</a> - an extensible tool for weaving .NET assemblies, and they'll inject `INotifyPropertyChanged` code into properties at compile time for you. We recommend using <a href="https://www.nuget.org/packages/ReactiveUI.Fody/">ReactiveUI.Fody</a> package. See an example:
-
-```cs
-// With ReactiveUI.Fody package you don't have to write
-// boilerplate code for getters and setters of read-write 
-// properties - the package will do it automagically
-// for you at compile time.
-[Reactive] public string Name { get; set; }
-```
+> **Note** With the [ReactiveUI.Fody](./boilerplate-code) package, you can implement the described patterns by annotating properties with either the `[Reactive]` or `[ObservableAsProperty]` attribute. The code responsible for sending property change notifications will be injected into getters or setters automatically at compile time.

@@ -1,7 +1,7 @@
 ---
 title: ReactiveUI v5.0.1 released
 category: Release Notes
-author: Paul Betts
+author: Anaïs Betts
 ---
 
 After 3 months, 427 commits by 12 different contributors, and 689 total files changed, the stable release of ReactiveUI 5.0 is now live! A huge thanks to the contributors for this release:
@@ -47,7 +47,7 @@ This makes it far cleaner to compose complex UI interactions at the view level.
 
 This release is the "Clean up" breaking changes release - many deprecated methods have been removed - I'm proud to say that this release removes over 2x the number of lines that it adds, and only leaves what Should Be There. 
 
-Many names have been changed to be more clear, methods have been removed or clarified, and in general, ReactiveUI 5.0 is a more pleasant framework to use. However, this means that moving from RxUI 4.x to 5.x can be a bit of work. Check out [the migration guide](https://github.com/reactiveui/ReactiveUI/blob/master/docs/migrating-from-rxui4.md) for more information. 
+Many names have been changed to be more clear, methods have been removed or clarified, and in general, ReactiveUI 5.0 is a more pleasant framework to use. However, this means that moving from RxUI 4.x to 5.x can be a bit of work. Check out [the migration guide](https://github.com/reactiveui/ReactiveUI/blob/main/docs/migrating-from-rxui4.md) for more information. 
 
 ## Testable Initialization
 
